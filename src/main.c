@@ -19,11 +19,12 @@ int main()
 
     fread(buffer, fsize, 1, f);
     fclose(f);
-    
+
     unsigned short pc = 0;
     while(pc < fsize)
     {
-        pc += DisassembleOpcode(buffer, pc);
+        unsigned short opcode = buffer[pc] << 8 | buffer[pc+1];
+        pc += DisassembleOpcode((unsigned short)0x2234, pc);
     }
 
     free(buffer);

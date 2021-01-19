@@ -1,3 +1,3 @@
 #pragma once
 
-unsigned char DisassembleOpcode(unsigned char* buffer, unsigned short pc); 
+unsigned char DisassembleOpcode(unsigned short buffer, unsigned short pc); 
