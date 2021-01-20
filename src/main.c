@@ -24,7 +24,7 @@ int main()
     while(pc < fsize)
     {
         unsigned short opcode = buffer[pc] << 8 | buffer[pc+1];
-        pc += DisassembleOpcode((unsigned short)0x2234, pc);
+        pc += DisassembleOpcode(opcode, pc);
     }
 
     free(buffer);
