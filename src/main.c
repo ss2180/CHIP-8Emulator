@@ -4,7 +4,7 @@
 
 int main()
 {
-    FILE* f = fopen("..\\data\\pong.ch8", "rb");
+    FILE* f = fopen("../data/Cave.ch8", "rb");
     if(f == NULL)
     {
         printf("ERROR: Could not open file.");
